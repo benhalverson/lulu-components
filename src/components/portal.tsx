@@ -37,6 +37,7 @@ export const QuickPortal: React.FC<{
     return () => {
       renderIn.removeChild(container);
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return createPortal(children, container);
