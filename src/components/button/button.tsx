@@ -1,5 +1,5 @@
 import React from 'react';
-// import './button.css';
+import './button.scss';
 
 export interface LuluButtonProps {
   leftIcon?: JSX.Element;
@@ -18,9 +18,9 @@ export const LuluButton: React.FC<LuluButtonProps &
   rightIcon,
   ...buttonProps
 }) => (
-  <button type="button" disabled={disabled} {...buttonProps}>
-    {leftIcon && <span className="prp-button__icon-left">{leftIcon}</span>}
+  <button className="button" type="button" disabled={disabled} {...buttonProps}>
+    {leftIcon && <span className="button__icon-left">{leftIcon}</span>}
     {children}
-    {rightIcon && <span className="prp-button__icon-right">{rightIcon}</span>}
+    {rightIcon && <span className="button__icon-right">{rightIcon}</span>}
   </button>
 );
