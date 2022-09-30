@@ -38,7 +38,9 @@ export const LuluDropdown: React.FC<LuluDropDownProps &
   }, [dropdownOpen]);
   return (
     <div>
-      <LuluButton onClick={handleDropdownToggle}>{value || placeholder}</LuluButton>
+      <LuluButton onClick={handleDropdownToggle}>
+        {value || placeholder}
+      </LuluButton>
       <div>
         {dropdownOpen && (
           <span onClick={handleContentClick}>{dropdownContent}</span>
