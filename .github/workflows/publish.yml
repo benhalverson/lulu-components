@@ -1,6 +1,6 @@
 name: '🚀 release'
 
-on:
+publish:
   branches:
     - main
 
