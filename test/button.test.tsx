@@ -1,6 +1,6 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { LuluButton } from '../src/components/button';
+import { LuluButton } from '../src/components/button/button';
 describe('it', () => {
   it('renders without crashing', () => {
     const div = document.createElement('div');
