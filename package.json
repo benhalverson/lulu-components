@@ -8,9 +8,9 @@
     "src"
   ],
   "scripts": {
-    "start": "tsdx watch",
-    "build": "tsdx build",
-    "sass": "sass src/components/*.scss dist/styles.css",
+    "start": "tsdx watch && npm run sass -- --watch",
+    "build": "tsdx build && npm run sass",
+    "sass": "sass src/components/**/*.scss dist/index.css",
     "test": "tsdx test --passWithNoTests",
     "lint": "tsdx lint",
     "prepare": "tsdx build",
